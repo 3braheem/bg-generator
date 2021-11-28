@@ -9,7 +9,6 @@ css.textContent = body.style.background + ";";
 
 function setBgGradient() {
     body.style.background = "linear-gradient(to right, " + color1.value + ", " + color2.value;
-
     css.textContent = body.style.background + ";";
 }
 
@@ -26,8 +25,8 @@ function randomColor(brightness) {
 function randomButton() {
     color1.value = randomColor(130);
     color2.value = randomColor(130);
-
     body.style.background = "linear-gradient(to right, " + color1.value + ", " + color2.value;
+    css.textContent = body.style.background + ";";
 }
 
 color1.addEventListener("input", setBgGradient);
